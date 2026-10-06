@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <title>PortBar — Mac 状态监测</title>
+  <path fill="#F3F6F9" d="M318 80H706C871 80 944 153 944 318V706C944 871 871 944 706 944H318C153 944 80 871 80 706V318C80 153 153 80 318 80Z"/>
+  <rect x="230" y="300" width="564" height="380" rx="34" fill="#13293D"/>
+  <path fill="#13293D" d="M186 702H838Q844 702 844 708C844 733 830 746 804 746H220C194 746 180 733 180 708Q180 702 186 702Z"/>
+  <path d="M614.41 445.25A113 113 0 1 1 559.75 390.59" fill="none" stroke="#00D7B9" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="591.90" cy="413.10" r="11" fill="#00D7B9"/>
+</svg>

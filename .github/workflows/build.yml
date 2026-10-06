@@ -1,0 +1,35 @@
+name: Build and verify
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  macos:
+    runs-on: macos-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - name: Build universal app
+        run: ./build.sh
+      - name: Verify architectures and signature
+        run: |
+          xcrun lipo dist/PortBar.app/Contents/MacOS/PortBar -verify_arch arm64 x86_64
+          codesign --verify --deep --strict dist/PortBar.app
+          plutil -lint dist/PortBar.app/Contents/Info.plist
+      - name: Verify port parsing and live refresh
+        run: |
+          dist/PortBar.app/Contents/MacOS/PortBar --self-test
+          dist/PortBar.app/Contents/MacOS/PortBar --realtime-test
+      - name: Package app
+        run: ditto -c -k --sequesterRsrc --keepParent dist/PortBar.app dist/PortBar-universal.zip
+      - uses: actions/upload-artifact@v7
+        with:
+          name: PortBar-universal
+          path: dist/PortBar-universal.zip
+          if-no-files-found: error
