@@ -1,19 +1,31 @@
 <p align="center">
-  <img src="Assets/PortBar.png" width="112" alt="PortBar 图标">
+  <img src="Assets/PortBar.png" width="80" alt="PortBar 应用图标">
 </p>
 
-# PortBar
+<h1 align="center">PortBar</h1>
 
-Mac 菜单栏里的接口与电源状态。一枚紧凑图标，点开查看当前连接、系统报告的链路速率，以及充电信息。
-
-**[下载最新版本](https://github.com/xiangyixuan-k/PortBar/releases/latest)** · macOS 13 Ventura 及以上 · Apple 芯片与 Intel 通用版本
+<p align="center"><strong>Mac 的接口与电源状态，一眼看清。</strong><br>
+在菜单栏查看当前连接、系统报告的链路速率与充电信息。</p>
 
 <p align="center">
-  <img src="Assets/preview-light.png" width="320" alt="PortBar 浅色界面">
-  <img src="Assets/preview-dark.png" width="320" alt="PortBar 深色界面">
+  <a href="https://github.com/xiangyixuan-k/PortBar/releases/latest"><strong>下载 PortBar</strong></a> ·
+  <a href="#开始使用">安装指南</a> ·
+  <a href="#机型适配与边界">兼容性</a> ·
+  <a href="https://github.com/xiangyixuan-k/PortBar/issues">反馈问题</a>
 </p>
 
-截图使用示例数据，实际接口数量和读数由你的 Mac 提供。
+<p align="center"><sub>macOS 13+ · Apple 芯片与 Intel 通用版本 · 本地读取</sub></p>
+
+<p align="center">
+  <img src="Assets/preview-light.png" width="300" alt="PortBar 浅色界面，示例接口与电源数据">
+  <img src="Assets/preview-dark.png" width="300" alt="PortBar 深色界面，示例接口与电源数据">
+</p>
+
+<p align="center"><sub>浅色 / 深色外观 · 截图使用示例数据，实际接口数量和读数由你的 Mac 提供。</sub></p>
+
+- **连接看得见** — 接口状态、设备名称与系统可提供的链路速率。
+- **电源有读数** — 电量、充电状态，以及适配器与系统输入功率。
+- **常驻菜单栏** — 原生弹出面板、深浅色外观与登录时启动。
 
 ## 开始使用
 
